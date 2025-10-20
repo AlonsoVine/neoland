@@ -1,0 +1,154 @@
+:root {
+  --color-primario: rgb(150, 106, 190);
+  --color-secundario: rgb(205, 177, 231);
+  --color-terciario: rgb(91, 59, 123);
+}
+body {
+  background-color: var(--color-secundario);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* ESTILOS DEL NAVBAR */
+.alinear {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cabecera {
+  background-color: var(--color-primario);
+  max-height: 100px;
+  padding: 10px 15px;
+  border-radius: 7px;
+  margin: 5px;
+}
+.img_avatar {
+  width: 60px;
+  border-radius: 50%;
+  &:hover {
+    transform: scale(1.1);
+    transition: linear;
+  }
+}
+a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  margin: 4px;
+}
+a:hover {
+  color: black;
+  transform: scale(1.7);
+  text-decoration: underline;
+}
+.boton_navbar {
+  button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--color-secundario);
+    &:hover {
+      background-color: var(--color-primario);
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+/* Estilos Header */
+.header {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.15)
+    ),
+    url("../img/lavanda.jpg") no-repeat;
+  background-size: cover;
+  height: 420px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  h1,
+  h2 {
+    margin: 0;
+    padding: 20px;
+  }
+  .header_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header_elements {
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .boton_header {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 7px;
+    background-color: var(--color-secundario);
+    &:hover {
+      background-color: var(--color-primario);
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+/* Estilos servicios */
+.titulo_servicios {
+  padding: 15px 20px;
+  padding-left: 40px;
+}
+.servicios_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicios {
+  background-color: var(--color-terciario);
+  padding: 20px;
+}
+.servicio_box {
+  padding: 10px;
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  background-color: var(--color-primario);
+  margin: 20px;
+  &:hover {
+    transform: scale(1.05);
+    transition: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  }
+  .img_box {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  img {
+    width: 100%;
+  }
+  .subseccion {
+    background-color: #c4a7de;
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 10px;
+  }
+  .nombre_personaje {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #dacbe8;
+  }
+  .tlf_personaje {
+    font-style: oblique;
+  }
+  .descripcion_personaje {
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 7px solid #b99ed8;
+  }
+}
