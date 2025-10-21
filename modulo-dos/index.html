@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="assets\img\avatar.png" />
+    <link rel="icon" href="assets\img\avatar_pendiente_reducido.png" />
     <title>Alonso</title>
     <link rel="stylesheet" href="assets\css\style.css" />
   </head>
   <body>
+
     <!-- navbar -->
     <section>
       <div class="alinear cabecera">
         <div>
           <img
             class="img_avatar"
-            src="assets/img/avatar.png"
+            src="assets/img/avatar_pendiente_reducido.png"
             alt="imagen de mi avatar"
           />
         </div>
@@ -36,10 +37,12 @@
     <section>
       <header class="header header_center">
         <div class="header_elements">
-          <h1>Bienvenidos</h1>
+          <h1>Bienvenidos a Lavandum</h1>
+          <a href="#formulario_contacto">
           <button class="boton_header" title="Comenzar" aria-label="Comenzar">
-            Comenzar
+            Contactar
           </button>
+          </a>
         </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -51,7 +54,7 @@
     <!-- Container de servicios -->
     <section>
       <div>
-        <h3 class="titulo_servicios">Seccion de personal:</h3>
+        <h3 class="titulo_servicios">¿Quienes somos nosotros?</h3>
         <div class="servicios servicios_center">
           <div class="servicio_box">
             <div class="img_box">
@@ -93,7 +96,95 @@
       </div>
     </section>
 
+    <!-- Formulario de contacto -->
+    <section>
+      <div id="formulario_contacto" class="formulario">
+        <div>
+            <h2>Contacta con nosotros</h2>
+            <p>Rellena el formulario y nos pondremos en contacto contigo</p>
+          </div>
+        <form class="form_contacto">
+          <input type="text" placeholder="Nombre" class="form_input"/></input>
+          <input type="email" placeholder="Email" class="form_input"/></input>
+          <input type="tel" placeholder="Teléfono" class="form_input"/></input>
+          <textarea placeholder="Escribe tu mensaje aquí" class="form_input"></textarea>
+          <input type="submit" value="Enviar" id="boton_formulario" class="boton_formulario"/></input>
+        </form>
+      </div>
+    </section>
+
+    <!-- Container de lista -->
+     <section>
+      <div class="lista">
+        <div>
+          <img id="imagen_lista" src="assets/img/lavanda5.jpg" alt="persona con lista de ventajas" label="imagen de persona"/>
+        </div>
+        <div>
+          <h2>¿Por qué elegirnos?</h2>
+        <ul>
+          <li>Profesionales con experiencia</li>
+          <li>Atención personalizada</li>
+          <li>Precios competitivos</li>
+          <li>Compromiso con la calidad</li>
+          <li>Disponibilidad 24/7</li>
+          <li>Porque lo digo yo</li>
+        </ul>
+        </div>
+        <div>
+          <img id="imagen_lista" src="assets/img/lavanda3.jpg" alt="persona con lista de ventajas" label="imagen de persona"/>
+        </div>        
+      </div>
+     </section>
+
+     <!-- tabla-->
+      <section id="seleccion_tabla">
+        <div class="tabla">
+          <div class="table_block">
+            <table>
+                <tr>
+                    <th>nombre</th>
+                    <th>variedad</th>
+                    <th>ubicacion</th>
+                    <th>precio</th>
+                </tr>
+                <tr>
+                    <td>Lavandula angustifolia</td>
+                    <td>Lavanda lanosa</td>
+                    <td>polonia</td>
+                    <td>33 $</td>
+                </tr>
+                <tr>
+                    <td>Lavandula stoechas</td>
+                    <td>Lavanda comun</td>
+                    <td>albacete</td>
+                    <td>23 $</td>
+                </tr>
+                <tr>
+                    <td>Lavandula multifida</td>
+                    <td>Lavanda del patio</td>
+                    <td>francia</td>
+                    <td>34 $</td>
+                </tr>
+            </table>
+        </div>
+      </div>
+      <div class="selectores">
+        <label for="filtrar" >Filtrar por variedad:</label>
+        <select id="filtrar" name="filtrar">
+          <option value="todas">Todas</option>
+          <option value="lavanda lanosa">Lavanda lanosa</option>
+          <option value="lavanda comun">Lavanda comun</option>
+          <option value="cosa">Cosa</option>
+        </select>
+      </div>
+      </section>
     <!-- footer -->
-    <section></section>
+    <section>
+      <footer class="footer footer_center">
+        <div>
+          <p>© 2024 Lavandum. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </section>
   </body>
 </html>
